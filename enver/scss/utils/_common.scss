@@ -1,0 +1,68 @@
+html,
+body {
+	min-width: 375px;
+}
+body {
+	font-family: 'NunitoSans';
+	font-size: 1.25rem;
+	line-height: 1.75;
+	font-weight: 400;
+	color: $white;
+	background-color: $dark_blue;
+}
+.wrapper {
+	display: flex;
+	min-height: 100%;
+	flex-direction: column;
+	overflow: hidden;
+}
+[class*='__container'] {
+	max-width: 347px;
+	padding: 0 10px;
+	margin: 0 auto;
+	@media (min-width: $sm) {
+		max-width: 900px;
+	}
+	@media (min-width: $xl) {
+		max-width: 75rem;
+	}
+}
+header {
+}
+.page {
+	flex: 1 1 auto;
+	.about {
+		margin-top: 130px;
+		margin-bottom: 114px;
+		@media (min-width: $xl) {
+			margin-bottom: 150px;
+		}
+	}
+	.why {
+		margin-bottom: 78px;
+		@media (min-width: $md) {
+			margin-bottom: 0;
+		}
+		@media (min-width: $xl) {
+			margin-bottom: 38px;
+		}
+	}
+	.servises {
+		margin-bottom: 112px;
+		@media (min-width: $xl) {
+			margin-bottom: 90px;
+		}
+	}
+	.slider {
+		margin-bottom: 100px;
+	}
+	.contact {
+		background-color: #1c1b1d;
+	}
+}
+.footer {
+	margin: 80px 0 50px 0;
+	@media (min-width: $md) {
+		margin: 0 0 30px 0;
+	}
+}
